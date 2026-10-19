@@ -137,49 +137,23 @@ void PrintResult(stInfo Info)
 
 int main()
 {
-    int Choice;
+    cout << "Algorithms & Problem Solving - Level 1\n";
+    cout << "Problems #01 to #05\n\n";
 
-    cout << "=====================================\n";
-    cout << " Algorithms & Problem Solving - L1\n";
-    cout << " Problems #01 to #05\n";
-    cout << "=====================================\n";
+    // Problem #01
+    // PrintName("Mohamed");
 
-    cout << "\n1. Print Name";
-    cout << "\n2. Read and Print Name";
-    cout << "\n3. Read Full Name";
-    cout << "\n4. Check Even or Odd";
-    cout << "\n5. Hiring Eligibility";
+    // Problem #02
+    // PrintName(ReadName());
 
-    cout << "\n\nChoose a Problem (1-5): ";
-    cin >> Choice;
+    // Problem #03
+    // PrintName(ReadFullName());
 
-    cout << "\n";
+    // Problem #04
+    // PrintNumberType(CheckNumberType(ReadNumber()));
 
-    switch (Choice)
-    {
-    case 1:
-        PrintName("Mohamed");
-        break;
-
-    case 2:
-        PrintName(ReadName());
-        break;
-
-    case 3:
-        PrintName(ReadFullName());
-        break;
-
-    case 4:
-        PrintNumberType(CheckNumberType(ReadNumber()));
-        break;
-
-    case 5:
-        PrintResult(ReadInfo());
-        break;
-
-    default:
-        cout << "Invalid Problem Number!\n";
-    }
+    // Problem #05
+    PrintResult(ReadInfo());
 
     return 0;
 }
