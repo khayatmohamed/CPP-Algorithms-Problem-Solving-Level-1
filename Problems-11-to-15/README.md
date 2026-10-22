@@ -1,5 +1,5 @@
 
-# Algorithms & Problem Solving - Level 1 (C++)
+# Algorithms & Problem Solving - Level 1 (C++) 
 
 A collection of beginner-friendly C++ programming exercises
 focused on improving algorithmic thinking, problem-solving
