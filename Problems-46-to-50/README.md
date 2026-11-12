@@ -1,29 +1,33 @@
-# Algorithms & Problem Solving – Level 1 (C++)
+# C++ Algorithms & Problem Solving – Level 1
 
-A collection of programming exercises designed to improve problem-solving skills and strengthen my understanding of C++ fundamentals.
+## Problems #46 to #50 – Solutions
 
-## 📌 About the Project
+### 📌 Overview
 
-This project contains solutions to Problems **#46 to #50**, implemented using C++.
+This folder contains my C++ solutions for Problems #46 to #50 from **Algorithms & Problem Solving – Level 1**.
 
-The main goal is to practice:
-- Functions and code organization.
-- Loops (`for`, `do-while`, `while`).
-- Conditional statements (`if`, `else`).
-- User input and output (`cin`, `cout`).
-- Working with strings and numbers.
-- Mathematical functions from `<cmath>`.
-- Boolean return values and logical operators.
+The purpose of these exercises is to strengthen my programming fundamentals, logical thinking, mathematical skills, and problem-solving abilities.
 
-## 🧩 Problems
+These exercises focus on character iteration, loan calculations, mathematical rounding, functions, login systems, PIN verification, loops, and controlling the number of login attempts.
 
-| Problem | Description | Concepts |
+## 📚 Solved Problems
+
+| Problem | Description | Key Concepts |
 |---|---|---|
-| #46 | Print letters from A to Z | `for` loop, `char` |
-| #47 | Calculate the number of months required to repay a loan | Functions, `ceil()` |
-| #48 | Calculate the monthly loan installment | Functions, division |
-| #49 | Login system with unlimited PIN attempts | `do-while`, conditions |
-| #50 | Login system with a maximum of 3 PIN attempts | Loops, counters, Boolean functions |
+| #46 | Print Letters From A to Z | For Loop, Characters, ASCII Values, Increment Operators |
+| #47 | Calculate Loan Repayment Months | Functions, Float, Arithmetic Operations, `ceil()` |
+| #48 | Calculate Monthly Loan Installment | Functions, Float, Division, Arithmetic Operations |
+| #49 | Login With Unlimited Attempts | Functions, Strings, Boolean, Do-While Loop, Conditions |
+| #50 | Login With a Maximum of 3 Attempts | Functions, Strings, Boolean, Loops, Counters, Logical Operators |
+
+## 📂 Project Structure
+
+```text
+Problems-46-to-50/
+│
+├── Solutions.cpp
+└── README.md
+```
 
 ## 🛠 Technologies
 
@@ -31,76 +35,151 @@ The main goal is to practice:
 - **IDE:** Microsoft Visual Studio
 - **Level:** Beginner
 
-## 📂 Project Structure
+## 🎯 Learning Objectives
+
+Through these exercises, I practice:
+
+- Writing clean and reusable functions
+- Using `for` loops to iterate through characters
+- Printing alphabet letters from A to Z
+- Understanding character increment operations
+- Reading and validating positive numbers
+- Calculating the number of monthly loan installments
+- Using the `ceil()` function to round a result up to the next integer
+- Calculating monthly loan installments
+- Working with floating-point numbers (`float`)
+- Working with strings (`string`) to store PIN codes
+- Returning Boolean values (`true` / `false`) from functions
+- Creating reusable input functions
+- Using `do-while` loops for repeated input
+- Implementing a login system with unlimited attempts
+- Implementing a login system with a maximum of three attempts
+- Using counters to track remaining attempts
+- Understanding comparison operators (`==`, `!=`)
+- Using logical operators (`&&`, `||`)
+- Controlling program flow with `if` / `else` statements
+- Using `system("color")` to change the console background and text color in Windows
+- Improving code organization, naming conventions, and readability
+
+## 🚀 How to Run
+
+1. Download or clone the repository.
+2. Open `Solutions.cpp` in Microsoft Visual Studio.
+3. Navigate to the `main()` function.
+4. Uncomment the code section for the problem you want to execute.
+5. Comment out the other problem sections.
+6. Compile and run the program.
+
+**Note:** Only one problem should be active in `main()` at a time.
+
+## 💡 Example – Problem #46
+
+**Input:**
 
 ```text
-Algorithms-and-Problem-Solving-Level-1/
-│
-├── main.cpp
-└── README.md
+No user input required.
 ```
 
-## ⚙️ How to Run
+**Output:**
 
-### 1. Clone the repository
-
-```bash
-git clone YOUR_REPOSITORY_URL
+```text
+A
+B
+C
+D
+E
+...
+X
+Y
+Z
 ```
 
-### 2. Open the project
+## 💡 Example – Problem #47
 
-Open `main.cpp` using Visual Studio or your preferred C++ editor.
+**Input:**
 
-### 3. Compile using g++
-
-```bash
-g++ main.cpp -o main
+```text
+Please enter the loan amount : 10000
+Please enter the monthly installment : 3000
 ```
 
-### 4. Run the program
+**Output:**
 
-Windows:
-
-```bash
-main.exe
+```text
+Total number of months required to repay the loan: 4 months
 ```
 
-Linux / macOS:
+**Note:** The `ceil()` function rounds the result up to ensure the loan is covered by a whole number of monthly installments.
 
-```bash
-./main
+## 💡 Example – Problem #48
+
+**Input:**
+
+```text
+Please enter the loan amount : 12000
+Please enter the number of months : 12
 ```
 
-**Note:** The `system("color")` commands used in the login exercises are Windows-specific.
+**Output:**
 
-## 🔐 Login System
+```text
+Monthly installment amount: 1000
+```
 
-The project includes two simple PIN authentication exercises:
+## 💡 Example – Problem #49
 
-- **Problem #49:** The user can retry entering the PIN until the correct PIN is entered.
-- **Problem #50:** The user has only three attempts. After three incorrect attempts, access is denied.
+**Input:**
 
-The demonstration PIN is `1234`.
+```text
+Please enter your PIN code: 1111
+Wrong PIN! Please try again.
 
-> Note: This is an educational exercise. The PIN is hardcoded and should not be used as a real authentication system.
+Please enter your PIN code: 2222
+Wrong PIN! Please try again.
 
-## 📚 What I'm Learning
+Please enter your PIN code: 1234
+```
 
-I am currently improving my C++ programming skills through practical exercises and algorithmic problem-solving.
+**Output:**
 
-My focus is on writing clean, readable, reusable code and understanding the logic behind every solution rather than simply copying code.
+```text
+Your account balance is: 7500
+```
 
-## 🎯 Future Goals
+**Note:** The user can continue entering the PIN until the correct PIN is entered. There is no attempt limit.
 
-- Continue solving more algorithmic problems.
-- Improve code structure and naming conventions.
-- Practice arrays, vectors, and structures.
-- Learn object-oriented programming (OOP).
-- Build practical C++ projects.
+## 💡 Example – Problem #50
+
+**Input:**
+
+```text
+Please enter your PIN code: 1111
+Wrong PIN! You have 2 attempt(s) remaining.
+
+Please enter your PIN code: 2222
+Wrong PIN! You have 1 attempt(s) remaining.
+
+Please enter your PIN code: 3333
+Wrong PIN! No attempts remaining.
+```
+
+**Output:**
+
+```text
+Your card has been blocked. Please contact your bank for assistance.
+```
+
+**Note:** The user has a maximum of three attempts to enter the correct PIN. After three incorrect attempts, access is denied.
+
+## ✅ Progress
+
+- **Problems:** #46 – #50
+- **Total Exercises:** 5
+- **Status:** Completed
+- **Language:** C++
 
 ---
 
-**Language:** C++  
-**Project:** Algorithms & Problem Solving – Level 1  
-**Status:** In Progress 🚀
+Part of my **C++ Algorithms & Problem Solving – Level 1** learning journey.
+
+More solutions will be added as I continue practicing.
